@@ -1,0 +1,14 @@
+{
+    "service": "python",
+    "workspaceFolder": "/workspace",
+    "dockerComposeFile": "../docker-compose.yml",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "GitHub.copilot",
+          "ms-python.python"
+        ]
+      }
+    },
+    "postCreateCommand": "pip install -r /workspace/requirements.txt && pip install -r /workspace/requirements-dev.txt"
+  }
